@@ -1,0 +1,28 @@
+<%- include("header") -%>
+
+
+<div class="boxx">
+    <div class="intro">
+        <h1><%= profile.name %></h1>
+        <p><%= profile.about %></p>
+        <hr style="height: 2px;">
+        <a href=""> Resources</a>
+    </div>
+    <div class="container">
+        <%profile.companies.forEach(function(company){%>
+            <a href="/profile/sde">
+                <div class="card">
+                    <!-- <img src="mainbg.jpeg" class="card-img-top" alt="..."> -->
+                    <div class="card-body">
+                        <div class="layer">
+                            <h1> <%= company.name %></h1>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        <%})%>
+    </div>
+</div>
+
+
+<%- include("footer") -%>
