@@ -10,9 +10,9 @@
     </div>
     <div class="container">
         <%profile.companies.forEach(function(company){%>
-            <a href="/profile/sde">
+            <a href="/company/<%=company.site%>">
                 <div class="card">
-                    <!-- <img src="mainbg.jpeg" class="card-img-top" alt="..."> -->
+                    <img src="mainbg.jpeg" class="card-img-top" alt="..." >
                     <div class="card-body">
                         <div class="layer">
                             <h1> <%= company.name %></h1>
