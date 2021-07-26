@@ -5,23 +5,36 @@
     <div class="intro">
         <h1><%= profile.name %></h1>
         <p><%= profile.about %></p>
-        <hr style="height: 2px;">
-        <a href=""> Resources</a>
+        <br>
+        <hr style="height: 2px; color: #FBC403; width: 60%; margin: auto; border: none;">
+        <br>
+        <div style=" margin: auto;">
+            <a href="" > Resources</a>
+        </div>
+        
+        <br>
+        <br>
+        <hr style="height: 2px; color: #FBC403; width: 60%; margin: auto; border: none;">
+        <br>
     </div>
     <div class="container">
         <%profile.companies.forEach(function(company){%>
             <a href="/company/<%=company.site%>">
                 <div class="card">
-                    <img src="mainbg.jpeg" class="card-img-top" alt="..." >
+                   
                     <div class="card-body">
+                        <img src="/images/<%= company.image %>"  style="height: 40%; margin: auto; margin-top: 18%; margin-left: 23%;" >
                         <div class="layer">
-                            <h1> <%= company.name %></h1>
+                            <h1 > <%= company.name %></h1>
                         </div>
                     </div>
                 </div>
             </a>
         <%})%>
     </div>
+    <br>
+        <hr style="height: 2px; color: #FBC403; width: 60%; margin: auto; border: none;">
+        <br>
 </div>
 
 
