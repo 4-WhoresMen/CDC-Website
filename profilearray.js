@@ -1,55 +1,69 @@
 const sdecomp = [
     amazon = {
         name:"Amazon",
-        site: "amazon"
+        image: "amazon.png",
+        site:"Amazon"
     },
     credit_suisse = {
         name:"Credit Suisse",
-        site: "credit_suisse"
+        image: "CS.png",
+        site:"credit_suisse"
     },
     deshaw = {
         name: "DE Shaw",
-        site: "deshaw"
-    },
+        image: "de.jpg",
+        site:"deshaw"
+    }
+    ,
     goldman_sachs = {
         name: "Goldman Sachs",
-        site: "goldman_sachs"
+        image: "goldman.png",
+        site:"goldman_sachs"
     },
     google = {
         name: "Google",
-        site: "google"
+        image: "google.png",
+        site:"google"
     },
     honeywell = {
         name: "Honeywell",
-        site: "honeywell"
+        image: "honeywell.png",
+        site:"honeywell"
     },
     huawei = {
         name: "Huawei",
-        site: "huawei"
+        image: "huawei.png",
+        site:"huawei"
     },
     mastercard= {
         name: "Mastercard",
-        site: "mastercard"
+        image: "mastercard.png",
+        site:"mastercard"
     },
     microsoft = {
         name: "Microsoft",
-        site: "microsoft"
+        image: "microsoft.png",
+        site:"microsoft"
     },
     salesforce= {
         name: "Salesforce",
-        site: "salesforce"
+        image: "salesforce.png",
+        site:"salesforce"
     },
     sprinklr = {
         name: "Sprinklr",
-        site: "sprinklr"
+        image: "amazon.png",
+        site:"sprinklr"
     },
     uber= {
         name: "Uber",
-        site: "uber"
+        image: "uber.png",
+        site:"uber"
     },
     wells_fargo = {
         name: "Wells Fargo",
-        site: "wells_fargo"
+        image: "wells.png",
+        site:"wells_fargo"
     }
     ];
     
@@ -60,11 +74,11 @@ const sdecomp = [
     const quantcomp = [
     deutsche_bank = {
         name: "Deutsche Bank",
-        site: "deutsche_bank"
+        image: "deutsche.png"
     },
     quadeye = {
         name: "Quadeye",
-        site: "quadeye"
+        image: "Quadeye.jpg"
     }
     ];
     
@@ -76,31 +90,31 @@ const sdecomp = [
     const analyticscomp = [
     abinbev = {
         name: "Ab InBev",
-        site: "abinbev"
+        image: "ab.gif"
     },
     adobe = {
         name: "Adobe",
-        site: "adobe"
+        image: "adobe.png"
     },
     american_express = {
         name: "American Express",
-        site: "american_express"
+        image: "american-express.png"
     },
     citi = {
         name: "CITI",
-        site: "citi"
+        image: "citi.png"
     },
     goldman_sachs = {
         name: "Goldman Sachs",
-        site: "goldman_sachs"
+        image: "goldman.png"
     },
     microsoft = {
         name: "Microsoft",
-        site: "microsoft"
+        image: "microsoft.png"
     },
     tata = {
         name: "Tata AIG General Insurance",
-        site: "tata"
+        image: "tata.png"
     }
     ];
     
@@ -112,23 +126,22 @@ const sdecomp = [
     const corecomp = [
     analog_devices = {
         name : "Analog Devices",
-        site: "analog_devices"
     },
     bajaj = {
         name: "Bajaj Auto Ltd",
-        site: "bajaj"
+        image: "bajaj.png"
+
     },
     piramal = {
         name: "Piramal Pharma Solutions",
-        site: "piramal"
+        image: "qualcomm.png"
     },
     qualcomm= {
         name: "Qualcomm",
-        site: "qualcomm"
+        image: "piramal.svgs"
     },
     texas_instrument = {
         name: "Texas Instrument",
-        site: "texas_instrument"
     }
     ];
     
@@ -140,7 +153,6 @@ const sdecomp = [
     const consultingcomp = [
     lek = {
         name: "L.E.K Consulting",
-        site: "lek"
     }
     ];
     
@@ -152,19 +164,18 @@ const sdecomp = [
     const financecomp = [
     deutsche_bank = {
         name:"Deutsche Bank",
-        site: "deutche_bank"
+        image: "deutsche.png"
     },
     gartner = {
         name: "Gartner",
-        site: "gartner"
+        image: "gartner-icon.jpg"
     },
     jpmorgan = {
         name: "JP Morgan Chase",
-        site: "jpmorgan"
+        image: "jp.png"
     },
     png = {
         name: "P&G",
-        site: "png"
     }
     ];
 
