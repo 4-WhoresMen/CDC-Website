@@ -64,10 +64,25 @@ app.get("/profile/:page", function (req, res) {
 
 app.get("/company/:page", function (req, res) {
     const reqtitle = req.params.page;
+    
     CompArray.forEach(function (ele) {
         if (ele.site === reqtitle) {
-            // console.log(ele);
-            res.render("company", { company: ele });
+            // console.log(ele.name);
+            var ExperienceArr=[];
+            Reply.find({}, function(err,repliess){
+                
+                repliess.forEach(function(repl){
+                    if(repl.company === ele.name){
+                        
+                        ExperienceArr.push(repl); 
+                        //console.log(ExperienceArr);
+                    }
+                });
+                //console.log(ExperienceArr);
+                res.render("company", { company: ele ,experience :ExperienceArr});
+            });
+            
+            
         }
     });
 });
