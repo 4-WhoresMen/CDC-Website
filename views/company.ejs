@@ -1,29 +1,6 @@
 <%- include("header") -%>
 
 
-
-<!-- <div class="boxx">
-    <div class="intro">
-        
-        <br>
-        <hr style="height: 2px; color: #FBC403; width: 60%; margin: auto; border: none;">
-        <br>
-        <div style=" margin: auto;">
-            <a href="" > Resources</a>
-        </div>
-        
-        <br>
-       
-    </div>
-
-
-    <h1>Questions</h1>
-    <br>
-    <hr style="height: 2px; color: #FBC403; width: 60%; margin: auto; border: none;">
-    <br>
-    <div class="container">
-        
-    </div> -->
      <div class="boxx">
         <div class="intro">
             
@@ -56,10 +33,26 @@
             <br>
         <br> 
             <hr style="height: 2px; color: #FBC403; width: 50%; margin: auto; border: none;">
+            <div class="container">
+                <%experience.forEach(function(exp){%>
+                    <a href="/intern/<%=exp.sitename%>">
+                        <div class="card">
+                           
+                            <div class="card-body">
+                               
+                                <div class="layer">
+                                    <h1 > <%= exp.name %></h1>
+                                    
+                                    <h2><%= exp.roll %></h2>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                <%})%>
+            </div>
             <br>
     </div>
-     -->
-
+     
 
 
 
