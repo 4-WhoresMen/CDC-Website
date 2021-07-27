@@ -52,7 +52,7 @@ const sdecomp = [
     },
     sprinklr = {
         name: "Sprinklr",
-        image: "amazon.png",
+        image: "sprinklr.png",
         site:"sprinklr"
     },
     uber= {
@@ -74,11 +74,13 @@ const sdecomp = [
     const quantcomp = [
     deutsche_bank = {
         name: "Deutsche Bank",
-        image: "deutsche.png"
+        image: "deutsche.png",
+        site: "deutsche_bank"
     },
     quadeye = {
         name: "Quadeye",
-        image: "Quadeye.jpg"
+        image: "quadeye.png",
+        site: "quadeye"
     }
     ];
     
@@ -90,31 +92,38 @@ const sdecomp = [
     const analyticscomp = [
     abinbev = {
         name: "Ab InBev",
-        image: "ab.gif"
+        image: "ab.gif",
+        site: "abinbev"
     },
     adobe = {
         name: "Adobe",
-        image: "adobe.png"
+        image: "adobe.png",
+        site: "adobe"
     },
     american_express = {
         name: "American Express",
-        image: "american-express.png"
+        image: "american-express.png",
+        site: "american_express"
     },
     citi = {
         name: "CITI",
-        image: "citi.png"
+        image: "citi.png",
+        site: "citi"
     },
     goldman_sachs = {
         name: "Goldman Sachs",
-        image: "goldman.png"
+        image: "goldman.png",
+        site: "goldman_sachs"
     },
     microsoft = {
         name: "Microsoft",
-        image: "microsoft.png"
+        image: "microsoft.png",
+        site: "microsoft"
     },
     tata = {
         name: "Tata AIG General Insurance",
-        image: "tata.png"
+        image: "tata.png",
+        site: "tata"
     }
     ];
     
@@ -126,22 +135,28 @@ const sdecomp = [
     const corecomp = [
     analog_devices = {
         name : "Analog Devices",
+        site: "analog_devices",
+        image: "analog_devices.png"
     },
     bajaj = {
         name: "Bajaj Auto Ltd",
-        image: "bajaj.png"
-
+        image: "bajaj.png",
+        site: "bajaj_auto"
     },
     piramal = {
         name: "Piramal Pharma Solutions",
-        image: "qualcomm.png"
+        image: "piramal.webp",
+        site: "piramal"
     },
     qualcomm= {
         name: "Qualcomm",
-        image: "piramal.svgs"
+        image: "qualcomm.png",
+        site: "qualcomm"
     },
     texas_instrument = {
         name: "Texas Instrument",
+        site: "texas",
+        image: "texas.png"
     }
     ];
     
@@ -152,7 +167,9 @@ const sdecomp = [
     
     const consultingcomp = [
     lek = {
-        name: "L.E.K Consulting",
+        name: "L. E. K. Consulting",
+        site:"lek_consulting",
+        image: "lek.png"
     }
     ];
     
@@ -164,18 +181,23 @@ const sdecomp = [
     const financecomp = [
     deutsche_bank = {
         name:"Deutsche Bank",
-        image: "deutsche.png"
+        image: "deutsche.png",
+        site: "deutsche_bank"
     },
     gartner = {
         name: "Gartner",
-        image: "gartner-icon.jpg"
+        image: "gartner-icon.jpg",
+        site: "gartner"
     },
     jpmorgan = {
         name: "JP Morgan Chase",
-        image: "jp.png"
+        image: "jp.png",
+        site: "gartner"
     },
     png = {
         name: "P&G",
+        site: "png",
+        image: "png.png"
     }
     ];
 

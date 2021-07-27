@@ -5,25 +5,19 @@
     <div class="intro">
         <h1><%= profile.name %></h1>
         <p><%= profile.about %></p>
-        <br>
-        <hr style="height: 2px; color: #FBC403; width: 60%; margin: auto; border: none;">
+        <hr style="height: 2px; color: #FBC403; width: 100%; margin: auto; border: none;">
         <br>
         <div style=" margin: auto;">
             <a href="" > Resources</a>
         </div>
-        
-        <br>
-        <br>
-        <hr style="height: 2px; color: #FBC403; width: 60%; margin: auto; border: none;">
         <br>
     </div>
     <div class="container">
         <%profile.companies.forEach(function(company){%>
             <a href="/company/<%=company.site%>">
                 <div class="card">
-                   
+                    <img src="/images/<%= company.image %>" style="height: 128px;" >
                     <div class="card-body">
-                        <img src="/images/<%= company.image %>"  style="height: 40%; margin: auto; margin-top: 18%; margin-left: 23%;" >
                         <div class="layer">
                             <h1 > <%= company.name %></h1>
                         </div>
@@ -32,9 +26,7 @@
             </a>
         <%})%>
     </div>
-    <br>
-        <hr style="height: 2px; color: #FBC403; width: 60%; margin: auto; border: none;">
-        <br>
+        <hr style="height: 2px; color: #FBC403; width: 40%; margin: auto; border: none;">
 </div>
 
 

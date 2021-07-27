@@ -39,9 +39,9 @@ quesArr = [
         ["CV : How important was your CV? How rigorously was it discussed? Would you advise or not advice adding things which are not completely true?", "cv_imp"],
         ["Duration of intern in weeks", "duration"],
         ["Your point of contact during your internship? (The position held by them and how involved were they)", "poc"],
-        ["Main project or objective during your intern (title and short description)", "main_project"],
+        ["Main project or objective during your intern.", "main_project"],
         ["Work culture in the company? (Times at which you work? How accessible are the resources? How encouraging are employees workers?)", "work_culture"],
-        ["Were Important tasks given to you or any input you gave to your project manager which proved to be useful? (Were you given a project that would help the company and were your views about it valued ? )", "imp_task"],
+        ["Were Important tasks given to you or any input you gave to your project manager which proved to be useful?", "imp_task"],
         ["Anything you had to learn before the start of intern which you hadn’t before it?", "learn"],
         ["Overall CDC experience? Any advice for improving the process down the line?", "overall"]
     ]
@@ -64,36 +64,28 @@ app.get("/profile/:page", function (req, res) {
 
 app.get("/company/:page", function (req, res) {
     const reqtitle = req.params.page;
-    
     CompArray.forEach(function (ele) {
         if (ele.site === reqtitle) {
-            // console.log(ele.name);
-            var ExperienceArr=[];
-            Reply.find({}, function(err,repliess){
-                
-                repliess.forEach(function(repl){
-                    if(repl.company === ele.name){
-                        
-                        ExperienceArr.push(repl); 
-                        //console.log(ExperienceArr);
+            var ExperienceArr = [];
+            Reply.find({}, function (err, repliess) {
+                repliess.forEach(function (repl) {
+                    if (repl.company === ele.name) {
+                        ExperienceArr.push(repl);
                     }
                 });
-                //console.log(ExperienceArr);
-                res.render("company", { company: ele ,experience :ExperienceArr});
+                res.render("company", { company: ele, experience: ExperienceArr });
             });
-            
-            
         }
     });
 });
 
 app.get("/intern/:name", function (req, res) {
     const reqtitle = req.params.name;
-    Reply.find({}, function(err,repliess){
+    Reply.find({}, function (err, repliess) {
         console.log(repliess);
-        repliess.forEach(function(repl){
-            if(repl.sitename === reqtitle){
-                res.render("intern", {intern: repl, ques: quesArr[5]});
+        repliess.forEach(function (repl) {
+            if (repl.sitename === reqtitle) {
+                res.render("intern", { intern: repl, ques: quesArr[5] });
             }
         });
     });

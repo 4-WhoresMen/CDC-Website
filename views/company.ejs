@@ -1,63 +1,36 @@
 <%- include("header") -%>
 
-
-     <div class="boxx">
+    <div class="boxx">
         <div class="intro">
-            
-            
+            <div class="flex">
+                <div class="left">
+                    <img src="/images/<%= company.image %>" alt="" style="width: 128px;">
+                </div>
+                <div class="right">
+                    <h1>
+                        <%= company.name %>
+                    </h1>
+                </div>
+            </div>
+            <hr style="height: 2px; color: #FBC403; width: 100%; margin: auto; border: none;">
+            <br>
+            <a href=""> Resources</a>
         </div>
-        <h2 style="margin-top: 7%; margin-left: 5%; color: white;">
-                   
-                
-            <span style="margin-left: 21%; margin-top: 5%; "><%= company.name %></span> </h2>
-            
-            <div  style=" border-radius: 40px; background-color: white; width: 110px; margin: auto; margin-top: 1%; margin-left: 25%; height: 110px; ">
-                <img src="/images/<%= company.image %>"  style="  height: 80px; width: 80px; margin-top: 10%; margin-left: 10%;" >
-            
-            </div>
-            
-            <br>
-           
-            <br>
-            <br>
-            
-            <hr style="height: 2px; color: #FBC403; width: 60%; margin: auto; border: none;">
-            <br>
-            <div style=" margin-left: 25%;" class="intro">
-                <a href="" > Questions</a>
-            </div>
-            
-            <br>
-            <br>
-            
-            <br>
-        <br> 
-            <hr style="height: 2px; color: #FBC403; width: 50%; margin: auto; border: none;">
-            <div class="container">
-                <%experience.forEach(function(exp){%>
-                    <a href="/intern/<%=exp.sitename%>">
-                        <div class="card">
-                           
-                            <div class="card-body">
-                               
-                                <div class="layer">
-                                    <h1 > <%= exp.name %></h1>
-                                    
-                                    <h2><%= exp.roll %></h2>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                <%})%>
-            </div>
-            <br>
     </div>
-     
-
-
-
-
-
-
-
+    <div class="container">
+        <%experience.forEach(function(exp){%>
+            <a href="/intern/<%=exp.sitename%>">
+                <div class="card">
+                   
+                    <div class="card-body">
+                       
+                        <div class="layer">
+                            <h1> <%= exp.name %></h1>
+                            <h4><%= exp.roll %></h4>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        <%})%>
+    </div>
 <%- include("footer") -%>

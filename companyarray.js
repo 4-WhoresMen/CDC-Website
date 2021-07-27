@@ -52,7 +52,7 @@ const CompArray = [
     },
     sprinklr = {
         name: "Sprinklr",
-        image: "amazon.png",
+        image: "sprinklr.png",
         site:"sprinklr"
     },
     uber= {
@@ -66,74 +66,99 @@ const CompArray = [
         site:"wells_fargo"
     },
     deutsche_bank = {
-        name:"Deutsche Bank",
-        image: "deutsche.png"
-    },
-    gartner = {
-        name: "Gartner",
-        image: "gartner-icon.jpg"
-    },
-    jpmorgan = {
-        name: "JP Morgan Chase",
-        image: "jp.png"
-    },
-    png = {
-        name: "P&G",
-    },
-    lek = {
-        name: "L.E.K Consulting",
-    },
-    analog_devices = {
-        name : "Analog Devices",
-    },
-    bajaj = {
-        name: "Bajaj Auto Ltd",
-        image: "bajaj.png"
-
-    },
-    piramal = {
-        name: "Piramal Pharma Solutions",
-        image: "qualcomm.png"
-    },
-    qualcomm= {
-        name: "Qualcomm",
-        image: "piramal.svgs"
-    },
-    texas_instrument = {
-        name: "Texas Instrument",
-    },
-    abinbev = {
-        name: "Ab InBev",
-        image: "ab.gif"
-    },
-    adobe = {
-        name: "Adobe",
-        image: "adobe.png"
-    },
-    american_express = {
-        name: "American Express",
-        image: "american-express.png"
-    },
-    citi = {
-        name: "CITI",
-        image: "citi.png"
-    },
-    goldman_sachs = {
-        name: "Goldman Sachs",
-        image: "goldman.png"
-    },
-    
-    tata = {
-        name: "Tata AIG General Insurance",
-        image: "tata.png"
-    },
-    deutsche_bank = {
         name: "Deutsche Bank",
-        image: "deutsche.png"
+        image: "deutsche.png",
+        site: "deutsche_bank"
     },
     quadeye = {
         name: "Quadeye",
-        image: "Quadeye.jpg"
+        image: "quadeye.png",
+        site: "quadeye"
+    },
+    abinbev = {
+        name: "Ab InBev",
+        image: "ab.gif",
+        site: "abinbev"
+    },
+    adobe = {
+        name: "Adobe",
+        image: "adobe.png",
+        site: "adobe"
+    },
+    american_express = {
+        name: "American Express",
+        image: "american-express.png",
+        site: "american_express"
+    },
+    citi = {
+        name: "CITI",
+        image: "citi.png",
+        site: "citi"
+    },
+    goldman_sachs = {
+        name: "Goldman Sachs",
+        image: "goldman.png",
+        site: "goldman_sachs"
+    },
+    microsoft = {
+        name: "Microsoft",
+        image: "microsoft.png",
+        site: "microsoft"
+    },
+    tata = {
+        name: "Tata AIG General Insurance",
+        image: "tata.png",
+        site: "tata"
+    },
+    analog_devices = {
+        name : "Analog Devices",
+        site: "analog_devices",
+        image: "analog_devices.png"
+    },
+    bajaj = {
+        name: "Bajaj Auto Ltd",
+        image: "bajaj.png",
+        site: "bajaj_auto"
+    },
+    piramal = {
+        name: "Piramal Pharma Solutions",
+        image: "piramal.webp",
+        site: "piramal"
+    },
+    qualcomm= {
+        name: "Qualcomm",
+        image: "qualcomm.png",
+        site: "qualcomm"
+    },
+    texas_instrument = {
+        name: "Texas Instrument",
+        site: "texas",
+        image: "texas.png"
+    },
+    lek = {
+        name: "L. E. K. Consulting",
+        site:"lek_consulting",
+        image: "lek.png"
+    },
+    deutsche_bank = {
+        name:"Deutsche Bank",
+        image: "deutsche.png",
+        site: "deutsche_bank"
+    },
+    gartner = {
+        name: "Gartner",
+        image: "gartner-icon.jpg",
+        site: "gartner"
+    },
+    jpmorgan = {
+        name: "JP Morgan Chase",
+        image: "jp.png",
+        site: "gartner"
+    },
+    png = {
+        name: "P&G",
+        site: "png",
+        image: "png.png"
     }
     ];
     module.exports = { CompArray};
