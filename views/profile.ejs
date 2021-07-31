@@ -13,17 +13,23 @@
         <br>
     </div>
     <div class="container">
+        
         <%profile.companies.forEach(function(company){%>
             <a href="/company/<%=company.site%>">
-                <div class="card com">
-                    <img src="/images/<%= company.image %>" style="height: 128px;" >
-                    <div class="card-body">
-                        <div class="layer">
-                            <h2 > <%= company.name %></h2>
+                <div class="card" >
+                    <div class="card-body" >
+                        <div style="margin-top: 10%;" ><center>
+                            <img src="/images/<%= company.image %>" style="height: 128px; margin-left: 0%;">
+                            <h2 style="margin-top: 10%;"> <%= company.name %></h2>
+                            </center>
                         </div>
                     </div>
                 </div>
             </a>
+            
+
+            
+    
         <%})%>
     </div>
         <hr style="height: 2px; color: #FBC403; width: 40%; margin: auto; border: none;">
