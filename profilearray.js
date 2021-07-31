@@ -4,11 +4,6 @@ const sdecomp = [
         image: "amazon.png",
         site:"Amazon"
     },
-    credit_suisse = {
-        name:"Credit Suisse",
-        image: "CS.png",
-        site:"credit_suisse"
-    },
     deshaw = {
         name: "DE Shaw",
         image: "de.jpg",
@@ -175,6 +170,11 @@ const sdecomp = [
         name: "L. E. K. Consulting",
         site:"lek_consulting",
         image: "lek.png"
+    },
+    png = {
+        name: "P&G",
+        site: "png",
+        image: "png.png"
     }
     ];
     
@@ -183,7 +183,12 @@ const sdecomp = [
     
     
     
-    const financecomp = [
+const financecomp = [
+    credit_suisse = {
+        name:"Credit Suisse",
+        image: "CS.png",
+        site:"credit_suisse"
+    },
     deutsche_bank = {
         name:"Deutsche Bank",
         image: "deutsche.png",
@@ -199,32 +204,32 @@ const sdecomp = [
         image: "jp.png",
         site: "jpmorgan"
     },
-    png = {
-        name: "P&G",
-        site: "png",
-        image: "png.png"
+    barclays = {
+        name: "Barclays",
+        image: "barclays.png",
+        site: "barclays"
     }
-    ];
+];
 
 const array = [
     sde = {
         para: "sde",
         name: "SDE",
-        about: "Some large about for this sde.",
+        about: "Working with users to determine their software needs. Designing, developing and testing a system or application according to the users' specifications. Drawing diagrams and models that help developers create the appropriate code for the system or application.",
         resources: "link",
         companies: sdecomp
     },
     quant = {
         para: "quant",
         name: "Quant",
-        about: "Some large about for this sde.",
+        about: "A quantitative analyst or “quant” is a specialist who applies mathematical and statistical methods to financial and risk management problems. S/he develops and implements complex models used by firms to make financial and business decisions about issues such as investments, pricing and so on.",
         resources: "link",
         companies: quantcomp
     },
     analytics = {
         para: "analytics",
         name: "Analytics",
-        about: "Some large about for this sde.",
+        about: "Using statistical tools and algorithms to identify, analyze, and interpret patterns and trends in complex data sets that could be helpful for the diagnosis and prediction",
         resources: "link",
         companies: analyticscomp
     },
@@ -238,7 +243,7 @@ const array = [
     consulting = {
         para: "consulting",
         name: "Consulting",
-        about: "Some large about for this sde.",
+        about: "Management consultants work to provide solutions to the client's changing business needs. As they progress in their careers, management consultants are often required to become aligned with a specific industry of their choice and eventually become “experts” in that field.",
         resources: "link",
         companies: consultingcomp
     },

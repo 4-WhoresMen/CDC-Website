@@ -130,6 +130,11 @@ const CompArray = [
         image: "piramal.webp",
         site: "piramal"
     },
+    barclays = {
+        name: "Barclays",
+        image: "barclays.png",
+        site: "barclays"
+    },
     qualcomm= {
         name: "Qualcomm",
         image: "qualcomm.png",
