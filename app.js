@@ -36,13 +36,13 @@ quesArr = [
         ["Why did you choose the company?", "reason"],
         ["How many rounds and what rounds?", "num_rounds"],
         ["Coding round. How many rounds and the degree of difficulty? How much expertise do you need to clear the round?", "cod_rounds"],
-        ["CV : How important was your CV? How rigorously was it discussed? Would you advise or not advice adding things which are not completely true?", "cv_imp"],
-        ["Duration of intern in weeks", "duration"],
+        ["CV : How important was your CV? Would you advise adding things which are not completely true in CV?", "cv_imp"],
+        ["Duration of intern.", "duration"],
         ["Your point of contact during your internship? (The position held by them and how involved were they)", "poc"],
         ["Main project or objective during your intern.", "main_project"],
-        ["Work culture in the company? (Times at which you work? How accessible are the resources? How encouraging are employees workers?)", "work_culture"],
+        ["How was the work culture in the company?", "work_culture"],
         ["Were Important tasks given to you or any input you gave to your project manager which proved to be useful?", "imp_task"],
-        ["Anything you had to learn before the start of intern which you hadn’t before it?", "learn"],
+        ["Anything you had to learn before the start of intern?", "learn"],
         ["Overall CDC experience? Any advice for improving the process down the line?", "overall"]
     ]
 ];
@@ -52,9 +52,7 @@ app.get("/", function (req, res) {
 });
 
 app.get("/profile/:page", function (req, res) {
-    //console.log(req);
     const reqtitle = _.lowerCase(req.params.page);
-    //console.log(array);
     array.forEach(function (ele) {
         if (ele.para === reqtitle) {
             res.render("profile", { profile: ele });
@@ -66,14 +64,14 @@ app.get("/company/:page", function (req, res) {
     const reqtitle = req.params.page;
     CompArray.forEach(function (ele) {
         if (ele.site === reqtitle) {
-            var ExperienceArr = [];
-            Reply.find({}, function (err, repliess) {
-                repliess.forEach(function (repl) {
-                    if (repl.company === ele.name) {
-                        ExperienceArr.push(repl);
+            var ExperienceArr=[];
+            Reply.find({}, function(err,repliess){
+                repliess.forEach(function(repl){
+                    if(repl.company === ele.name){
+                        ExperienceArr.push(repl); 
                     }
                 });
-                res.render("company", { company: ele, experience: ExperienceArr });
+                res.render("company", { company: ele ,experience :ExperienceArr});
             });
         }
     });
@@ -81,11 +79,10 @@ app.get("/company/:page", function (req, res) {
 
 app.get("/intern/:name", function (req, res) {
     const reqtitle = req.params.name;
-    Reply.find({}, function (err, repliess) {
-        console.log(repliess);
-        repliess.forEach(function (repl) {
-            if (repl.sitename === reqtitle) {
-                res.render("intern", { intern: repl, ques: quesArr[5] });
+    Reply.find({}, function(err,repliess){
+        repliess.forEach(function(repl){
+            if(repl.sitename === reqtitle){
+                res.render("intern", {intern: repl, ques: quesArr[5]});
             }
         });
     });

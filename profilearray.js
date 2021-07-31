@@ -45,6 +45,11 @@ const sdecomp = [
         image: "microsoft.png",
         site:"microsoft"
     },
+    oracle = {
+        name: "Oracle",
+        image: "oracle.png",
+        site: "oracle"
+    },
     salesforce= {
         name: "Salesforce",
         image: "salesforce.png",
@@ -154,7 +159,7 @@ const sdecomp = [
         site: "qualcomm"
     },
     texas_instrument = {
-        name: "Texas Instrument",
+        name: "Texas Instruments",
         site: "texas",
         image: "texas.png"
     }
@@ -192,7 +197,7 @@ const sdecomp = [
     jpmorgan = {
         name: "JP Morgan Chase",
         image: "jp.png",
-        site: "gartner"
+        site: "jpmorgan"
     },
     png = {
         name: "P&G",

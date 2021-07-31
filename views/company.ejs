@@ -1,6 +1,8 @@
 <%- include("header") -%>
 
+
     <div class="boxx">
+
         <div class="intro">
             <div class="flex">
                 <div class="left">
@@ -13,24 +15,38 @@
                 </div>
             </div>
             <hr style="height: 2px; color: #FBC403; width: 100%; margin: auto; border: none;">
-            <br>
-            <a href=""> Resources</a>
         </div>
-    </div>
-    <div class="container">
-        <%experience.forEach(function(exp){%>
-            <a href="/intern/<%=exp.sitename%>">
-                <div class="card">
-                   
-                    <div class="card-body">
-                       
-                        <div class="layer">
-                            <h1> <%= exp.name %></h1>
-                            <h4><%= exp.roll %></h4>
+        <div class="intro">
+            <a href=""> Questions</a>
+        </div>
+        <br>
+        <div class="container">
+            <%experience.forEach(function(exp){%>
+                <a href="/intern/<%=exp.sitename%>">
+                    <div class="card cv">
+                        <img src="/student/<%= Math.ceil(Math.random()*5) %>.png" style="height: 133px; margin-top: 10px;" >
+                        <div class="card-body">
+                            <div class="layer">
+                                <h2>
+                                    <%= exp.name %>
+                                </h2>
+                                <h2>
+                                    <%= exp.roll %>
+                                </h2>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </a>
-        <%})%>
+                </a>
+                <%})%>
+        </div>
+        <hr style="height: 2px; color: #FBC403; width: 70%; margin: auto; border: none;">
     </div>
-<%- include("footer") -%>
+
+
+
+
+
+
+
+
+    <%- include("footer") -%>

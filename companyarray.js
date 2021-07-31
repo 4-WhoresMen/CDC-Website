@@ -120,6 +120,11 @@ const CompArray = [
         image: "bajaj.png",
         site: "bajaj_auto"
     },
+    oracle = {
+        name: "Oracle",
+        image: "oracle.png",
+        site: "oracle"
+    },
     piramal = {
         name: "Piramal Pharma Solutions",
         image: "piramal.webp",
@@ -131,7 +136,7 @@ const CompArray = [
         site: "qualcomm"
     },
     texas_instrument = {
-        name: "Texas Instrument",
+        name: "Texas Instruments",
         site: "texas",
         image: "texas.png"
     },
@@ -153,7 +158,7 @@ const CompArray = [
     jpmorgan = {
         name: "JP Morgan Chase",
         image: "jp.png",
-        site: "gartner"
+        site: "jpmorgan"
     },
     png = {
         name: "P&G",
