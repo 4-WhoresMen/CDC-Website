@@ -38,7 +38,7 @@ quesArr = [
         ["Coding round. How many rounds and the degree of difficulty? How much expertise do you need to clear the round?", "cod_rounds"],
         ["CV : How important was your CV? Would you advise adding things which are not completely true in CV?", "cv_imp"],
         ["Duration of intern.", "duration"],
-        ["Your point of contact during your internship? (The position held by them and how involved were they)", "poc"],
+        ["Your point of contact during your internship?", "poc"],
         ["Main project or objective during your intern.", "main_project"],
         ["How was the work culture in the company?", "work_culture"],
         ["Were Important tasks given to you or any input you gave to your project manager which proved to be useful?", "imp_task"],
@@ -49,6 +49,10 @@ quesArr = [
 
 app.get("/", function (req, res) {
     res.render("fpage");
+});
+
+app.get("/soon", function (req, res) {
+    res.render("soon");
 });
 
 app.get("/profile/:page", function (req, res) {

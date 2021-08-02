@@ -120,6 +120,11 @@ const CompArray = [
         image: "bajaj.png",
         site: "bajaj_auto"
     },
+    cisco = {
+        name: "Cisco",
+        image: "cisco.png",
+        site: "cisco"
+    },
     oracle = {
         name: "Oracle",
         image: "oracle.png",
@@ -129,6 +134,11 @@ const CompArray = [
         name: "Piramal Pharma Solutions",
         image: "piramal.webp",
         site: "piramal"
+    },
+    hsbc = {
+        name: "HSBC",
+        image: "hsbc.png",
+        site: "hsbc"
     },
     barclays = {
         name: "Barclays",
@@ -160,6 +170,11 @@ const CompArray = [
         image: "gartner-icon.jpg",
         site: "gartner"
     },
+    nvidia = {
+        name: "Nvidia",
+        image: "nvidia.png",
+        site: "nvidia"
+    },
     jpmorgan = {
         name: "JP Morgan Chase",
         image: "jp.png",
@@ -169,6 +184,11 @@ const CompArray = [
         name: "P&G",
         site: "png",
         image: "png.png"
+    },
+    itc = {
+        name: "ITC",
+        site: "itc",
+        image: "itc.png"
     }
     ];
     module.exports = { CompArray};

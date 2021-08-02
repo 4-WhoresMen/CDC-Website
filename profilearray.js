@@ -4,6 +4,11 @@ const sdecomp = [
         image: "amazon.png",
         site:"Amazon"
     },
+    cisco = {
+        name: "Cisco",
+        image: "cisco.png",
+        site: "cisco"
+    },
     deshaw = {
         name: "DE Shaw",
         image: "de.jpg",
@@ -115,6 +120,11 @@ const sdecomp = [
         image: "goldman.png",
         site: "goldman_sachs"
     },
+    hsbc = {
+        name: "HSBC",
+        image: "hsbc.png",
+        site: "hsbc"
+    },
     microsoft = {
         name: "Microsoft",
         image: "microsoft.png",
@@ -142,6 +152,11 @@ const sdecomp = [
         name: "Bajaj Auto Ltd",
         image: "bajaj.png",
         site: "bajaj_auto"
+    },
+    nvidia = {
+        name: "Nvidia",
+        image: "nvidia.png",
+        site: "nvidia"
     },
     piramal = {
         name: "Piramal Pharma Solutions",
@@ -175,6 +190,11 @@ const sdecomp = [
         name: "P&G",
         site: "png",
         image: "png.png"
+    },
+    itc = {
+        name: "ITC",
+        site: "itc",
+        image: "itc.png"
     }
     ];
     
@@ -216,42 +236,42 @@ const array = [
         para: "sde",
         name: "SDE",
         about: "Working with users to determine their software needs. Designing, developing and testing a system or application according to the users' specifications. Drawing diagrams and models that help developers create the appropriate code for the system or application.",
-        resources: "link",
+        resources: "https://drive.google.com/drive/folders/1SrW7V94vKWx0M2lKHlAsKKiIkfZOfwu-?usp=sharing",
         companies: sdecomp
     },
     quant = {
         para: "quant",
         name: "Quant",
         about: "A quantitative analyst or “quant” is a specialist who applies mathematical and statistical methods to financial and risk management problems. S/he develops and implements complex models used by firms to make financial and business decisions about issues such as investments, pricing and so on.",
-        resources: "link",
+        resources: "https://docs.google.com/document/d/13hCyslBHDNU-37nZYpX7Um76AQIsu1J0eirh_82fAI8/edit?fbclid=IwAR1dmX0nOy0eI5Fy0NOgJwbjvyBDBzYYMdX-Bgptm4kcVbX04qB4F0a5kjA#",
         companies: quantcomp
     },
     analytics = {
         para: "analytics",
         name: "Analytics",
         about: "Using statistical tools and algorithms to identify, analyze, and interpret patterns and trends in complex data sets that could be helpful for the diagnosis and prediction",
-        resources: "link",
+        resources: "https://docs.google.com/document/d/179I075aIU9QVQQmbsjQXEblZmjkvaGo01qteewNZE1s/edit?usp=sharing",
         companies: analyticscomp
     },
     finance = {
         para: "finance",
         name: "Finance",
-        about: "Some large about for this sde.",
-        resources: "link",
+        about: "Finance profile mainly focuses on improve profitability and analyze markets for business opportunities, such as expansion, mergers, and acquisitions.  It also include reviewing financial reports, monitoring accounts, and preparing financial forecasts.",
+        resources: "/soon",
         companies: financecomp
     },
     consulting = {
         para: "consulting",
         name: "Consulting",
         about: "Management consultants work to provide solutions to the client's changing business needs. As they progress in their careers, management consultants are often required to become aligned with a specific industry of their choice and eventually become “experts” in that field.",
-        resources: "link",
+        resources: "https://drive.google.com/drive/folders/17FcjP0jzdxHSq6jLhR3BjihMf92JINBp?usp=sharing",
         companies: consultingcomp
     },
     core = {
         para: "core",
         name: "Core",
-        about: "Some large about for this sde.",
-        resources: "link",
+        about: "The profile requires specialization in the particular field and are highly valued for their level of expertise and professionalism in their respective areas of operation. These companies offer jobs in core areas of engineering such as mechanical, electrical or infrastructure sector .",
+        resources: "https://drive.google.com/drive/folders/1ROUKO1Cvzf0PnqZfuOvQAhV_jevn6vqf?usp=sharing",
         companies: corecomp
     },
 ]
