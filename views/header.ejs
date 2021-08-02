@@ -1,160 +1,167 @@
 <!DOCTYPE html>
 <html lang="en" class="h-100" oncontextmenu="return false">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>InternPhile</title>
+    <title>CDC Aid</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
         integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
-    <link rel="icon" href="/images/hat.png">
-</head>
+</head >
 <style>
+   
     body {
         margin: 0;
         padding: 0;
         background: #00012c;
-        background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(bg.jpeg);
+         background-image:  linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)),url(bg.jpeg);
         /*
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover; */
     }
-
-    a {
+    a{
         text-decoration: none;
         color: white;
     }
-
-    .navbar-brand {
+    .navbar-brand{
         font-weight: 700;
     }
-
     .navbar-nav {
         margin-left: auto;
     }
-
-    .nav-item a {
+    .nav-item a{
         font-weight: 600;
         transition: 0.5s;
     }
-
-    .nav-item a:hover {
+    .nav-item a:hover{
         border-radius: 10px;
         background-color: #FBC403;
     }
-    .body p{
-        font-family: 'Lato', sans-serif;color: white; font-size: 1.1rem;
-    }
-    .intro {
+    .intro{
         width: 60%;
         margin: auto;
         margin-top: 40px;
     }
-
-    @media (max-width: 1000px) {
-        .intro {
+    @media (max-width: 1000px){
+        .intro{
             width: 80%;
         }
-        .body p{
-            font-size: 1rem;
-        }
-        .nav-item a:hover {
-            border-radius: 4px;
-            background-color: #00012c;
-        }
+        .nav-item a:hover{
+        border-radius: 4px;
+        background-color: #00012c;
     }
-
-    .head {
+    }
+    .head{
         display: flex;
         justify-content: center;
     }
-
-    .head h1 {
+    .head h1{
         padding: 5px;
         border-radius: 4px;
         color: white;
     }
-
-    .head:last-child {
-        margin-top: 50px;
+    .head:last-child{
+        margin-top: 50px ;
     }
-
-    .container {
+    
+    .container{
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
         margin: 4rem auto;
         width: 80vw;
     }
-
-    .card {
+    .card{
         min-width: 20rem;
         height: 300px;
         margin-bottom: 3rem;
-        box-shadow: 0 2px 0 rgba(255, 255, 255, 0.05), 0 5px 20px rgba(255, 255, 255, 0.1);
+        box-shadow: 0 0px 0 rgba(255, 255, 255, 0.05), 0 5px 20px rgba(255, 255, 255, 0.1);
         transition: transform .5s;
-        border: solid 1px #00012c;
-        background: transparent;
+        border: solid 0px #00012c;
+        background: transparent; 
+        
+        background: rgb(240, 240, 240);
+        border-radius: 20px;
+    }
+    .carddd{
+        min-width: 20rem;
+        height: 300px;
+        margin-bottom: 3rem;
+        box-shadow: 0 0px 0 rgba(255, 255, 255, 0.05), 0 5px 20px rgba(255, 255, 255, 0.1);
+        transition: transform .5s;
+        border: solid 0px #00012c;
+        background: transparent; 
         background-image: url(mainbg.jpeg);
         background: rgb(240, 240, 240);
         border-radius: 20px;
     }
-
-    .card img {
+    .card img{
         width: 128px;
     }
-
-    .com {
+    .carddd img{
+        width: 128px;
+    }
+    .com{
         display: flex;
         justify-content: center;
         align-items: center;
     }
-
-    .compcard {
+    .compcard{
         min-width: 20rem;
         height: 300px;
         margin-bottom: 3rem;
-
+    
         box-shadow: 0 2px 0 rgba(255, 255, 255, 0.05), 0 5px 20px rgba(255, 255, 255, 0.1);
         transition: transform .5s;
         border: solid 1px #00012c;
-        background: transparent;
+        background: transparent; 
         background-image: url(mainbg.jpeg);
         background: rgb(240, 240, 240);
         border-radius: 20px;
     }
-
-    .card:hover {
+    .card:hover{
         transform: scale(1.05);
         border-radius: 20px;
     }
-
-    .card-body {
+    .carddd:hover{
+        transform: scale(1.05);
+        border-radius: 20px;
+    }
+    .card-body{
         background: transparent;
         color: black;
         position: absolute;
-        top: 0;
-        left: 0;
+        top: 0;left: 0;
         width: 100%;
         height: 100%;
         transition: 0.5s;
     }
-
-    .card-body:hover {
+    .card-body:hover{
         background-color: #FBC403;
         opacity: 0.9;
         border-radius: 20px;
     }
+    .carddd-body{
+        background: transparent;
+        color: black;
+        position: absolute;
+        top: 0;left: 0;
+        width: 100%;
+        height: 100%;
+        transition: 0.5s;
+    }
+    .carddd-body:hover{
 
-    .card-body .layer {
+        opacity: 1;
+        
+   
+        border-radius: 20px;
+    }
+    .card-body .layer{
         bottom: 5%;
         margin: auto;
         opacity: 1;
@@ -162,57 +169,50 @@
         position: absolute;
         align-items: center;
     }
-
-    .cv {
+    
+    .cv{
         display: flex;
         flex-direction: column;
         /* justify-content: center; */
         align-items: center;
     }
-
-    .layerrr {
+    .layerrr{
         right: 2%;
     }
-
-    .pdff a {
+    .pdff a{
         color: white;
     }
-
     .pdff a:hover {
         color: black;
     }
-
-    .card-body .layer p {
+    .card-body .layer p{
         opacity: 0;
     }
-
-    .card-body:hover .layer p {
+    .card-body:hover .layer p{
         opacity: 1;
     }
-
-    .card-body:hover .layer {
+    .card-body:hover .layer{
         color: white;
         opacity: 1;
         bottom: 10%;
     }
 
-    .containerr {
+    .containerr{
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
         margin: 4rem auto;
         width: 90vw;
     }
-
-    .cardd {
+    .cardd{
         min-width: 15rem;
         height: 200px;
         margin-bottom: 3rem;
         color: #FBC403;
         box-shadow: 0 2px 0 rgba(255, 255, 255, 0.05), 0 5px 20px rgba(255, 255, 255, 0.1);
         transition: transform .5s;
-        border: solid 1px rgba(0, 0, 0, 0.55);
-        background: transparent;
+        border: solid 1px rgba(0,0,0,0.55);
+        background: transparent; 
         background-image: url(mainbg.jpeg);
         background: rgb(240, 240, 240);
         border-radius: 100px;
@@ -221,94 +221,80 @@
         justify-content: center;
         align-items: center;
     }
-
-    .cardd:hover {
+    .cardd:hover{
         transform: scale(1.05);
         border-radius: 100px;
         background: #FBC403;
         color: white;
     }
-
-    .boxx .intro {
-        color: white;
+    .boxx .intro{
+        color: white; 
     }
-
-    .boxx .intro h1 {
+    .boxx .intro h1{
         font-size: 4rem;
     }
-
-    .boxx .intro a {
+    .boxx .intro a{
         font-size: 2rem;
         padding: 7px;
         background-color: #FBC403;
         border-radius: 20px;
     }
-
-    .boxx .intro a:hover {
+    .boxx .intro a:hover{
         color: #00012c;
         font-weight: 400;
     }
-
-    li {
+    li{
         padding-left: 25px;
     }
-
-    .fst {
+    .fst{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
     }
-
-    .containerrr {
-        width: 70%;
-        margin: auto;
-        color: white;
+    .containerrr{
+        width: 70%; margin: auto; color: white;
     }
     ::selection {
      color: white;
       background: #e9b600;
+      text-shadow: black;
 }
-
-    @media (max-width: 1000px) {
-        .containerrr {
+    @media (max-width: 1000px){
+        .containerrr{
             width: 90%;
         }
     }
 </style>
-
 <body class="d-flex flex-column h-100">
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-dark"
-            style="background-color: #00012c; background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2));">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="/" style="word-spacing: 1px; margin-left: 10px;"> Intern<span
-                        style="color: #FBC403;">Phile</span> <img src="/images/hat.png" style="width: 30px;"> </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="/">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active"
-                                href="http://www.cdc.iitkgp.ac.in/uploads/manual_24_09_2019.pdf ">CDC Guidelines</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="#">Resources</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="#">Questions</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="/">About Us</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #00012c; background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2));">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/" style="word-spacing: 1px; margin-left: 10px;"> Intern<span style="color: #FBC403;">Phile</span>  <img src="/images/hat.png" style="width: 30px;"> </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="http://www.cdc.iitkgp.ac.in/uploads/manual_24_09_2019.pdf ">CDC Guidelines</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Resources</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Questions</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="/#about">About Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        
+      </nav>
+      <hr style="height: 1px; color: #FBC403; width: 100%;  border: none;">
+</header>
 
-        </nav>
-        <hr style="height: 1px; color: #FBC403; width: 100%;  border: none;">
-    </header>
